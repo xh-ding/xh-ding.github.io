@@ -74,27 +74,10 @@
           	  <li>06/2024: I graduated from the University of Science and Technology of China (USTC) as an outstanding graduate. Many thanks to all the teachers and classmates who have supported me!</li>
 		  <li>03/2024: I have received four Ph.D. offers in Computer Science, including from Indiana University Bloomington and the University of Massachusetts Amherst.</li>
         	</ul>
-		<a id="toggle-news" href="javascript:void(0);" style="color: #007bff; text-decoration: none; font-size: 16px; display: block; margin-top: 0px;">Show more</a>
               </td>
             </tr>
           </tbody></table>
-	<script>
-  document.addEventListener("DOMContentLoaded", function() {
-    let newsList = document.querySelectorAll("#news-list li");
-    let toggleButton = document.getElementById("toggle-news");
-    let isExpanded = false;
 
-    function updateNewsDisplay() {
-      newsList.forEach((item, index) => {
-        item.style.display = (index < 5 || isExpanded) ? "list-item" : "none";
-      });
-      toggleButton.textContent = isExpanded ? "Show less" : "Show more";
-    }
-
-    toggleButton.addEventListener("click", function() {
-      isExpanded = !isExpanded;
-      updateNewsDisplay();
-    });
 
     updateNewsDisplay(); // 初始化，默认显示前5条
   });
