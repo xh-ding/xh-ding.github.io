@@ -23,8 +23,8 @@
         box-shadow: 0 2px 4px rgba(0,0,0,0.05); /* 轻微的阴影效果 */
       }
       /* 可以为不同的部分设置颜色，例如： */
-      .formula-linear { color: #0056b3; }
-      .formula-softmax { color: #d9534f; }
+      .mathrl { color: #0056b3; }
+      /* .Red { color: #d9534f; } */
     </style>
 
   </head>
@@ -104,24 +104,24 @@ I am broadly interested in the fields related to high-performance computing (HPC
       <tr>
         <td style="padding:16px;width:25%;vertical-align:middle">
           <div class="formula-box">
-            <span class="formula-linear">Linear: O(d)</span><br>
-            <span class="formula-softmax">Softmax: O(e<sup>d</sup>)</span>
+            <span class="mathrl">$U_t = R_t + \gamma U_{t+1}$</span>
+            <!-- <span class="formula-softmax">Softmax: O(e<sup>d</sup>)</span> -->
           </div>
         </td>
         <td style="padding:8px;width:75%;vertical-align:middle">
-          <a href="#">
-            <span class="papertitle">The Memory Capacity of Attention</span>
+          <a href="https://festive-clam-15f.notion.site/Mathematical-Foundations-of-RL-2fb39f5cabfa80bf9efff8d9a601f5b1?source=copy_link">
+            <span class="papertitle">Mathematical Foundations of RL</span>
           </a>
           <br>
-          <em>September 1, 2025</em>
+          <em>Feb 9, 2026</em>
           <br>
           <p>
-            How much information can attention mechanisms store? Using relative error analysis, we show that linear attention scales linearly with head dimension while softmax attention scales exponentially.
+            Instead of focusing on specific RL algorithms, this blog explains in as much detail as possible all the mathematical foundations involved in reinforcement learning: from random variables to the Bellman equations, in a way that even high school students can understand.
           </p>
         </td>
       </tr>
 
-      <tr>
+      <!-- <tr>
         <td style="padding:16px;width:25%;vertical-align:middle">
           <div class="formula-box">
             D<sub>eff</sub> = W |ln(ε)| / |ln(1-α)|
@@ -137,9 +137,11 @@ I am broadly interested in the fields related to high-performance computing (HPC
           <p>
              A mathematical explanation of why sliding window attention's effective receptive field is O(W) rather than theoretical O(LW), regardless of depth.
           </p>
-        </td>
+        </td> -->
       </tr>
     </tbody></table>
+
+          
     <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
               <tr>
               <td style="padding:16px;width:100%;vertical-align:middle">
