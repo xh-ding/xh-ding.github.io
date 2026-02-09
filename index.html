@@ -24,7 +24,7 @@
       }
       /* 可以为不同的部分设置颜色，例如： */
       .mathrl { color: #0056b3; }
-      /* .Red { color: #d9534f; } */
+      .TPsize { color: #d9534f; }
     </style>
 
   </head>
@@ -145,6 +145,35 @@ I am broadly interested in the fields related to high-performance computing (HPC
           <br>
           <p>
             Instead of focusing on specific RL algorithms, this blog explains in as much detail as possible all the mathematical foundations involved in reinforcement learning: from random variables to the Bellman equations, in a way that even high school students can understand.
+          </p>
+        </td>
+      </tr>
+
+      <tr>
+        <td style="padding:16px;width:25%;vertical-align:middle">
+          <div class="formula-box">
+            <span class="TPsize">
+              <span style="font-style:italic;">
+                O =
+                <span style="display:inline-block; text-align:center; vertical-align:middle;">
+                  <span style="display:block; font-size:0.75em;">c</span>
+                  &sum;
+                  <span style="display:block; font-size:0.75em;">i=1</span>
+                </span>
+                X<sub>i</sub>W<sub>i</sub>
+              </span>
+            </span>
+          </div>
+        </td>
+        <td style="padding:8px;width:75%;vertical-align:middle">
+          <a href="https://tbik.super.site/">
+            <span class="papertitle">Enabling Large-Scale True-on-Policy RL by Bringing Tensor-Parallelism to Order</span>
+          </a>
+          <br>
+          <em>Nov 25, 2025</em>
+          <br>
+          <p>
+            A detailed analysis of why, in modern LLM systems, different tensor-parallel sizes (TP size) can lead to non-deterministic behavior—i.e., the same input producing different outputs. It also explains how using different parallelization strategies in the training engine and the inference engine during RL training can cause RL to shift from on-policy to off-policy.
           </p>
         </td>
       </tr>
